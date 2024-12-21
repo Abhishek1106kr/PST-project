@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Management Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-img">LM</div>
+                <span>LoanManager</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="./main.html">Home</a>
+                <a href="./myloan.html">My Loans</a>
+                <a href="./loan.html">Loans</a>
+                <a href="#">Help</a>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            
+            <div class="mobile-menu">☰</div>
+        </div>
+    </header>
+   
+    
+    <div class="dashboard">
+        <div class="header">
+            <h1>Loan Management Dashboard</h1>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-label">Total Loan Amount</div>
+                <div class="stat-value">$75,000</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Outstanding Amount</div>
+                <div class="stat-value">$50,000</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Next Payment Due</div>
+                <div class="stat-value">Dec 28</div>
+            </div>
+        </div>
+
+        <div class="alerts-section">
+            <h2 class="title">Payment Alerts</h2>
+            <div id="alerts-container"></div>
+        </div>
+
+        <div class="charts-container">
+            <div class="chart-card">
+                <h2 class="title">Payment History</h2>
+                <canvas id="paymentHistoryChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2 class="title">Loan Distribution</h2>
+                <canvas id="loanDistributionChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

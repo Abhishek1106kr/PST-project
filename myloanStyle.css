@@ -1,0 +1,205 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 20px;
+}.header-container {
+background-color: #fff;
+/* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+padding: 15px 30px;
+position: sticky;
+top: 0;
+z-index: 1000;
+background: transparent;
+}
+
+.header-content {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 1.5em;
+font-weight: bold;
+color: #2c3e50;
+}
+
+.logo-img {
+width: 40px;
+height: 40px;
+background-color: #3498db;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+
+.nav-links {
+display: flex;
+gap: 30px;
+align-items: center;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #2c3e50;
+font-weight: 500;
+padding: 5px 10px;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+background-color: #f0f2f5;
+}
+
+.auth-buttons {
+display: flex;
+gap: 15px;
+}
+
+.auth-buttons button {
+padding: 8px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 500;
+transition: all 0.3s;
+}
+
+.login-btn {
+background: none;
+border: 1px solid #3498db;
+color: #3498db;
+}
+
+.signup-btn {
+background: #3498db;
+border: none;
+color: white;
+}
+
+.login-btn:hover {
+background: #f0f2f5;
+}
+
+.signup-btn:hover {
+background: #2980b9;
+}
+
+.mobile-menu {
+display: none;
+font-size: 1.5em;
+cursor: pointer;
+}
+
+    /* Include all previous styles from header and then add: */
+    .loan-cards-container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .loan-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .loan-header {
+        padding: 20px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .loan-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .loan-status {
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 0.9em;
+    }
+
+    .status-active {
+        background: #e3fcef;
+        color: #00875a;
+    }
+
+    .loan-content {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .loan-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .detail-item {
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .detail-label {
+        color: #666;
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+
+    .detail-value {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .chart-container {
+        min-height: 200px;
+        position: relative;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #e9ecef;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: #3498db;
+        border-radius: 4px;
+        transition: width 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+        .loan-content {
+            grid-template-columns: 1fr;
+        }
+    }

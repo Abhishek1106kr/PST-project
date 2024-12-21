@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Loans - LoanManager</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="./myloanStyle.css">
+</head>
+<body>
+    <!-- Include the same header as before -->
+    <header class="header-container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-img">LM</div>
+                <span>LoanManager</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="./main.html">Home</a>
+                <a href="./myloan.html">My Loans</a>
+                <a href="./loan.html">Loans</a>
+                <a href="#">Help</a>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            
+            <div class="mobile-menu">☰</div>
+        </div>
+    </header>
+
+    <div class="loan-cards-container" id="loanCardsContainer">
+        <!-- Loan cards will be dynamically inserted here -->
+    </div>
+    
+
+    <script src="./myloanScript.js"></script>
+</body>
+</html>
